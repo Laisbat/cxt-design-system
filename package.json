@@ -9,12 +9,20 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
-    "preview-storybook": "turbo run preview-storybook"
+    "preview-storybook": "turbo run preview-storybook",
+    "install-ui": "npm install @acme/ui --workspace=docs"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "prettier": "^3.2.5",
-    "turbo": "^2.4.4"
+    "turbo": "^2.4.4",
+    "@storybook/cli": "latest",
+    "@storybook/addon-links": "latest",
+    "@storybook/addon-essentials": "latest",
+    "@storybook/addon-interactions": "latest",
+    "@storybook/react": "latest",
+    "@storybook/react-vite": "latest",
+    "@storybook/testing-library": "latest"
   },
   "name": "design-system",
   "packageManager": "npm@8.19.3",

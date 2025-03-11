@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@acme/ui/button";
+import { Button } from "./button";
 
 const meta: Meta<typeof Button> = {
+  title: "Buttons/Button",
   component: Button,
   argTypes: {
     type: {
@@ -34,7 +35,7 @@ export const Primary: Story = {
   ),
   name: "Button",
   args: {
-    children: "Hello",
+    children: "tested",
     type: "button",
     style: {
       color: "blue",
