@@ -1,10 +1,16 @@
-const base = {
+const AppColors = {
   white: "#ffffff",
   black: "#000000",
-  blue: "#007bff",
+  primary: "#007bff",
+  darkPrimary: "#005fc8",
   secondary: "#6c757d",
+  darkSecondary: "#343a40",
+  blue: "##0164B7",
+  darkBlue: "#005dc8",
+  gray: "#494949",
   green: "#28a745",
   info: "#17a2b8",
+  warning: "#F36700",
   yellow: "#ffc107",
   red: "#dc3545",
   light: "#f8f9fa",
@@ -19,7 +25,7 @@ const base = {
   focus: "rgba(0, 123, 255, 0.25)",
   active: "rgba(0, 123, 255, 0.5)",
   disabled: "#dee2e6",
-  placeholder: "#6c757d",
+  placeholder: "#898d8d",
   divider: "#dee2e6",
   transparent: "transparent",
   gradient: {
@@ -32,12 +38,4 @@ const base = {
   },
 };
 
-export default {
-  ...base,
-  primary: base.blue,
-  secondary: base.secondary,
-  success: base.green,
-  info: base.info,
-  warning: base.yellow,
-  danger: base.red,
-};
+export default AppColors;

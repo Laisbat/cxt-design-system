@@ -24,12 +24,13 @@
     "@storybook/cli": "^8.6.4",
     "@storybook/react": "^8.2.6",
     "@storybook/react-vite": "^8.2.6",
+    "@storybook/theming": "^8.6.4",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.57.0",
     "serve": "^14.2.1",
     "storybook": "^8.2.6",
     "typescript": "5.5.4",
-    "vite": "^5.4.14"
+    "vite": "^6.2.1"
   },
   "main": "index.js",
   "keywords": [],
