@@ -30,7 +30,6 @@ export const variantToColor = {
       borderColor: AppColors.darkSecondary,
     },
   },
-  success: {},
   info: {
     bgColor: "transparent",
     borderColor: AppColors.darkBlue,
@@ -41,8 +40,6 @@ export const variantToColor = {
       color: AppColors.white,
     },
   },
-  warning: {},
-  danger: {},
 };
 
 export const Container = styled.button<ContainerProps>`

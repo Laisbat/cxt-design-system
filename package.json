@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --turbopack",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -10,18 +10,11 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
     "preview-storybook": "turbo run preview-storybook",
-    "install-ui": "npm install @acme/ui --workspace=docs"
+    "install-ui": "npm install @repo/ui --workspace=docs",
+    "test": "jest"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "@storybook/addon-essentials": "latest",
-    "@storybook/addon-interactions": "latest",
-    "@storybook/addon-links": "latest",
-    "@storybook/cli": "latest",
-    "@storybook/react": "latest",
-    "@storybook/react-vite": "latest",
-    "@storybook/testing-library": "latest",
-    "@storybook/theming": "^8.6.4",
     "prettier": "^3.2.5",
     "turbo": "^2.4.4"
   },
@@ -30,5 +23,12 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "vite": "^6.2.1"
+  },
+  "overrides": {
+    "rimraf": "^4.0.0",
+    "glob": "^10.0.0"
+  }
 }
