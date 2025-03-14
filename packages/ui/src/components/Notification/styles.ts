@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import AppColors from "../../theme/colors";
 
 export const NotificationWrapper = styled.div<{
   type: "success" | "error" | "info";
@@ -11,12 +12,12 @@ export const NotificationWrapper = styled.div<{
   background-color: ${({ type }) => {
     switch (type) {
       case "success":
-        return "green";
+        return AppColors.green;
       case "error":
-        return "red";
+        return AppColors.red;
       case "info":
       default:
-        return "blue";
+        return AppColors.warning;
     }
   }};
 `;
