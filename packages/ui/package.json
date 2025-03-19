@@ -5,9 +5,19 @@
   "license": "MIT",
   "exports": {
     "./button": {
-      "types": "./src/button.tsx",
-      "import": "./dist/button.mjs",
-      "require": "./dist/button.js"
+      "types": "./src/components/Button.tsx",
+      "import": "./dist/components/Button.mjs",
+      "require": "./dist/components/Button.js"
+    },
+    "./modal": {
+      "types": "./src/components/Modal.tsx",
+      "import": "./dist/components/Modal.mjs",
+      "require": "./dist/components/Modal.js"
+    },
+    "./theme": {
+      "types": "./src/theme.ts",
+      "import": "./dist/theme.mjs",
+      "require": "./dist/theme.js"
     }
   },
   "scripts": {
@@ -21,7 +31,6 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@types/jest": "^29.5.14",
     "@types/react": "^18.3.18",
@@ -31,19 +40,18 @@
     "eslint-plugin-unicorn": "^57.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
     "typescript": "5.5.4"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "styled-components": "^5.3.10",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.7",
-    "@mui/material": "^6.4.7"
+    "@mui/material": "^6.4.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "styled-components": "^5.3.10"
   },
   "publishConfig": {
     "access": "public"

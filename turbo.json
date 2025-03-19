@@ -17,9 +17,7 @@
       "cache": false
     },
     "preview-storybook": {
-      "dependsOn": [
-        "^build"
-      ],
+      "dependsOn": ["^build"],
       "cache": false
     }
   }

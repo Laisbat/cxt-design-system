@@ -10,8 +10,7 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
     "preview-storybook": "turbo run preview-storybook",
-    "install-ui": "npm install @repo/ui --workspace=docs",
-    "test": "jest"
+    "install-ui": "npm install @repo/ui --workspace=docs"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -26,9 +25,5 @@
   ],
   "dependencies": {
     "vite": "^6.2.1"
-  },
-  "overrides": {
-    "rimraf": "^4.0.0",
-    "glob": "^10.0.0"
   }
 }

@@ -3,6 +3,6 @@
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
-    "types": ["jest", "@testing-library/jest-dom"]
+    "types": ["@testing-library/jest-dom"]
   }
 }
