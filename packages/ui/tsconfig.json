@@ -1,6 +1,6 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
-  "include": ["."],
+  "include": [".", "./src/components/**/*.test.tsx"],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
     "types": ["@testing-library/jest-dom"]
